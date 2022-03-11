@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin : 0px auto;
+            padding:0px;
+        }
+        body {
+            background-image: url(../img/backgroud.jpg);
+        }
+        .wrapper {
+            width: 1089px;
+            height: 800px;
+            background-color: antiquewhite;
+        }
+
+        nav{
+            width :1089px;
+            height: 50px;
+            line-height: 50px;
+            background-color: aqua;
+        }
+
+        .menu li{
+            float: left;
+            height: 100%;
+            width: 150px;
+            background-color: aqua;
+            list-style:none;
+            text-indent: 20px;
+            position: relative;
+        }
+        a {
+            color: blue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .menu li:hover{
+            background-color: blueviolet;
+        }
+        li:hover>a{
+            color: yellow;
+            font-style: italic;
+        }
+        .menu li .submenu{
+            display: none;
+            position: absolute;
+        }
+        .menu li:hover .submenu{
+            display:block;
+        }
+        header{
+            height:150px;
+            width: 100%;
+            background-image: url(../img/s1.jpg);
+            text-shadow: 5px 20px 1opx rgb(82, 102,43);
+            font-size: 60px;
+            text-align: center;
+        }
+        aside{
+            width: 400px;
+            height:100%;
+            float: left;
+        }
+        section{
+            width: 689px;
+            height: 100%;
+            float: left;
+        }
+        section{
+            width: 689px;
+            height: 100%;
+            float:left;
+        }
+        .clear{
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav>
+            <ul class="menu">
+                <li><a href="https://iuh.edu.vn"Home>Home</a></li>
+                <li><a href="">SERVICES</a></li>
+                <li><a href="">CONTACT</a>
+                    <ul class="submenu">
+                        <li><a href="">PHONE</a></li>
+                        <li><a href="">INTERNET</a></li>
+                        <li><a href="">TIVI</a></li>
+                    </ul>
+                </li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">HELP</a></li>
+            </ul>       
+            <span>
+                <form action=""method="post">
+                    <label for="lblEmai">Email: </label>
+                    <input type="email" name="txtEmail" id="txtEmail" required placeholder="Nhập email">
+                    <input type="submit" value="Go" style="border-radius: 50%;padding:3px;">
+                </form>
+            </span>    
+        </nav>   
+        <header>Đầu Trang</header>    
+        <div class="content">
+            <aside>
+                <article>
+                <h2>Hoạt Động 1</h2>
+                <img src="../img/h1.jpg" alt="" srcset="">
+                </article>
+            </aside>
+            <aside>
+                <article>
+                <h2>Hoạt Động 1</h2>
+                <img src="../img/h2.jpg" alt="" srcset="">
+                </article>
+            </aside>
+            <aside>
+                <article>
+                <h2>Hoạt Động 1</h2>
+                <img src="../img/h3.jpg" alt="" srcset="">
+                </article>
+            </aside>
+            <section>
+                <form action="" method="post"></form>
+            </section>
+        </div>
+        <div class="clear"></div>
+        <footer>Chan trang</footer>
+    </div>
+</body>
+</html>
